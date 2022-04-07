@@ -1,26 +1,8 @@
 /**
  * GoPro recording status and battery percent by Gryphus21.
  * CheapRemote v0.1
- * 
- * 
- * BUG: 'connection refused' (Errorno 113) (HTTP STATUS CODE -1)
- * 
- * ATTEMPTS: [X = Failed attempt, ? = To try]
- *  X) Using the mode() and disconnect() methods in Setup()
- *  X) Using delay() method
- *  X) Verified network parameters
- *  X) DNS configured
- *  X) Manually set network parameters (No DHCP)
- *  X) Use 'bool HTTPClient::begin(String host, uint16_t port, String uri)' instead of 'bool HTTPClient::begin(String url)'
- *  X) Infinite while loop on pressing the shutdown key to make sure the TCP socket is closed
- *  X) Disconnect at each cycle and then connect again later
- *  ?) Conversion of all Strings to char[]
- * 
- * PROBLEMS:
- * 1) After a GoPro reboot, the WiFi AP may not start, so it is impossible to connect to the GoPro WiFi network.
- * 2) After a GoPro reboot, it may happen that the HTTP service fails to start or crash, thus it would be impossible to perform querys.
  *
- * SOLUTION: None, the problem is in GoPro firmware.
+ * BUG: 'connection refused' (Errorno 113) (HTTP STATUS CODE -1)
  */
 
 #include <M5StickCPlus.h>
