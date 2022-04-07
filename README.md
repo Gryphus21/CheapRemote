@@ -25,3 +25,6 @@ This is the list of problems encountered:
 
 # Solutions to problems
 None, the problem is in GoPro firmware.
+
+# Usage
+Remember to change the dependencies on the **platformio.ini** file in case you want to use VS Code with **PlatformIO**, otherwise just use the .ino file of the project.
