@@ -25,7 +25,7 @@ bool tryToConnect() {
     M5.Lcd.fillScreen(TFT_BLACK);
     M5.Lcd.setCursor(0, 120);
     M5.Lcd.setTextColor(TFT_WHITE);
-    M5.Lcd.print("Connectiong...");
+    M5.Lcd.print("Connecting...");
 
     if (wifiInitConnection()) {
         M5.Lcd.fillScreen(TFT_BLACK);
